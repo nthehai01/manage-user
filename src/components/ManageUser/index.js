@@ -65,7 +65,15 @@ const ManageUser = () => {
                         </TableHead>
                         <TableBody>
                             {userList.items?.map((user) => {
-                                return <UserRow user={user} columns={columns} />;
+                                return (
+                                    <UserRow
+                                        user={user}
+                                        columns={columns}
+                                        page={page}
+                                        rowsPerPage={rowsPerPage}
+                                        setUserList={setUserList}
+                                    />
+                                );
                             })}
                         </TableBody>
                     </Table>
