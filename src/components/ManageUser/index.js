@@ -18,7 +18,6 @@ const columns = [
     { id: 'email', label: 'Email', minWidth: 200 },
     { id: 'soDt', label: 'Phone', minWidth: 100 },
     { id: 'maLoaiNguoiDung', label: 'Type', minWidth: 100 },
-    { id: 'option', label: 'Option', minWidth: 100 }
 ];
 
 const ManageUser = () => {
@@ -61,6 +60,7 @@ const ManageUser = () => {
                                         {column.label}
                                     </TableCell>
                                 ))}
+                                <TableCell />
                             </TableRow>
                         </TableHead>
                         <TableBody>
